@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>calculation</title>
+</head>
+
+<body>
+    <p id="levelcontent"></p>
+    <p id="date" style="color: #ddd; text-align:right"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML=d;
+        </script>
+    <form name="form1" onsubmit="return false;" id="levelSelection">
+        <fieldset style="border-width: 20px ;margin-right: 1000px;">
+            Name: <input type="text" id="name"><a id="demo1" style="color: red;"></a>
+            <br>
+            contact information: <input type="number" id="contact" ><a id="demo2" style="color: red;"></a>
+            <br>
+            Age: <input type="number" id="Age"><a id="demo3" style="color: red;"></a>
+            <br>
+            Gender:
+            <input type="radio" name="Gender" value="male" id="Gender">Male</input>
+            <input type="radio" name="Gender" value="Female" id="Gender">Female</input><p id="p1" style="color: red;"></p>
+            <hr>
+            Majors:
+            <input type="radio" name="Majors" value="Comptuer Science">Comptuer Science</input>
+            <input type="radio" name="Majors" value="Software Engineering">Software Engineering</input>
+            <input type="radio" name="Majors" value="Cyber Security">Cyber Security</input>
+            <br>
+            Degree:
+            <input type="radio" name="Degree" value="PHD">PHD</input>
+            <input type="radio" name="Degree" value="Master Degree">Master Degree</input>
+            <hr>
+            Salary
+            <br>
+            Hours: <input type="number" id="hours"><a id="demo5" style="color: red;"></a>
+            <br>
+            Amount: <input type="number" id="Amount"><a id="demo6" style="color: red;"></a>
+            <br>
+            <hr>
+            <br>
+            <button onclick="validation()">Calculate and info</button>
+            <p></p>
+            <textarea name="Result" id="hi" cols="59" rows="10"></textarea>
+        </fieldset>
+    </form>
+    <script src="java.js"></script>
+</body>
+
+</html>

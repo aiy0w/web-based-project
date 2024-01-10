@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>student Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url(blueBackground.jpg);
+        }
+        .border1 {
+            width: 420px;
+            border-radius:  10px;
+            border: 2px solid rgb(255, 255, 255,.2);
+            backdrop-filter: blur(20px);    
+            margin-left: 400pt;
+            margin-bottom: 50pt;
+            margin-top: 150pt;
+            padding: 30pt;
+            border-width: 5pt;
+            background: transparent;
+            padding: 30px 40px;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <p id="date" style="color: #ddd; text-align:right"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML=d;
+        </script>
+    <form action="form1" class="border1">
+        <fieldset>
+            <legend>Student Form</legend>
+            Email:
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+                <span class="input-group-text">@example.com</span>
+            </div>
+            Password:
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Password">
+                <span class="input-group-text">Password</span>
+            </div>
+            <p></p>
+            <button type="button" class="btn btn-primary" onclick="alert('Login is sucessful')"><a href="../Calculation/Calculation form/calculation.html" style="text-decoration: none;color: white;">Login</a></button>
+            <button type="reset" class="btn btn-danger">reset</button>
+            <button type="button" class="btn btn-warning"><a href="login1.html" style="text-decoration: none;color: white;">Switch to Doctor form</a></button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

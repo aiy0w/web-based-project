@@ -1,0 +1,180 @@
+<html>
+
+<head>
+     <title> Contact Us</title>
+     <link rel="stylesheet" href="../mystyle.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+     <style>
+          a {
+               text-decoration: none;
+               overflow: hidden;
+               color: #ddd;
+          }
+
+          body {
+               min-height: 130%;
+          }
+
+          .contact {
+               color: #ddd;
+               margin: -450;
+               margin-left: 30pc;
+               margin-top: 5pc;
+               font-size: 26px;
+               align-items: center;
+               display: inline-block;
+          }
+
+          .footer1 {
+               display: inline-block;
+          }
+
+          .footer1 .bottom-footer {
+               display: inline-block;
+          }
+
+          .footer1 .bottom-footer p {
+               font-size: 15px;
+               padding-left: 26pc;
+               text-align: center;
+          }
+
+          .footer1 .bottom-footer .x ul {
+               display: inline-block;
+               margin: 0px 13px;
+          }
+     </style>
+     <script> window.alert("Welcome to this page (:")</script>
+</head>
+
+<body>
+
+
+     <p class="one">
+          <img src="uni logo.jpg" height="90px" width="90px">
+          <a href="../homepage.html" style="text-decoration: none; color:white; overflow:hidden;">University of Al
+               Nour</a>
+     </p>
+
+     <div class="topnav">
+          <a class="active" href="../homepage.html"><i class='bx bx-home-alt'></i> Home</a>
+          <a href="../About us/about us.html">About Us</a>
+          <a href="../contact us.html" style="float: right;">Contact Us</a>
+          <a href="../Review/review.html">Review</a>
+          <a href="../Faculties/faculties.html">Faculties</a>
+          <a href="../Fees/fees.html">Feels</a>
+          <a href="../Sitemap/sitemap.html">Sitemap</a>
+          <a href="../Calculation/login1.html">Log In</a>
+     </div>
+
+     <h1 style="text-align: right ; margin-right: 10pc; color: white; margin-top: 3pc;"> Date and time:</h1>
+
+     <p id="date" style="text-align: right; margin-right:5pc; color: white ;"> </p>
+
+     <ul type="none" class="contact">
+          <ul type="none">
+               <li>
+                    <p id="p1" style="color: white;"></p>
+               </li>
+               <li>
+                    <p id="p2" style="color: white;"></p>
+               </li>
+               <li>
+                    <p onmouseover="this.style.color='red'; this.innerHTML='Tel: 00962-65609999 '"
+                         onmouseout="this.style.color='white'; this.innerHTML='Tel: 00962-65609999'"> Tel:
+                         00962-65609999</p>
+               </li>
+               <li>
+                    <p id="p4" style="color: white;"></p>
+               </li>
+               <li>
+                    <p id="p5" style="color: white;"></p>
+               </li>
+               <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.080511353612!2d35.89782397618385!3d32.040012121284036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c9e3a42faf1ef%3A0x7cba90fd7b6d2247!2sApplied%20Science%20Private%20University!5e0!3m2!1sen!2sjo!4v1701452961576!5m2!1sen!2sjo"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </ul>
+     </ul>
+     <ul type="none" class="contact">
+          <ul type="none">
+               <li><a href="https://www.facebook.com/profile.php?id=61553799166476"><i class='bx bxl-facebook-square'
+                              style="font-size: 100px;"></i></a></li>
+               <li><a href="https://www.instagram.com/amu.education/"><i class='bx bxl-instagram-alt'
+                              style="font-size: 100px;"></i></a></li>
+               <li><a href="https://twitter.com/AmuUniversity"><i class='bx bxl-twitter'
+                              style="font-size: 100px;"></i></a>
+               </li>
+               <li><a href="https://www.youtube.com/channel/UCv7Rg3sZvtb3WaGfeFT5S4g"><i class='bx bxl-youtube'
+                              style="font-size: 100px;"></i></a></li>
+          </ul>
+     </ul>
+     <p style="text-align: center; color: white; font-size: 30px;">Did this help you?
+          <button type="button" class="btn btn-secondary" onclick="Alerts()">Yes</button>
+          <button type="button" class="btn btn-dark" onclick="Alerts2()">No </button>
+     </p>
+     <script>
+          var d = new Date();
+          document.getElementById("date").innerHTML = d;
+          document.getElementById("p1").innerHTML = "Address Al Arab st. 21-Amman - Jordan";
+          document.getElementById("p2").innerHTML = "Email: <a href=mailto:amu.university@gmail.com>amu.university@gmail.com</a>";
+          document.getElementById("p4").innerHTML = "Post Code: 11937";
+          document.getElementById("p5").innerHTML = "P.O.Box: 541350";
+
+          function Alerts() {
+
+               alert("Thank you");
+
+          }
+          function Alerts2() {
+
+               confirm("you can contact call center ( 5609999 )")
+          }
+
+     </script>
+
+     <footer>
+          <ul type="none" class="footer1">
+               <ul type="none" class="bottom-footer">
+                    <p><a href="Contact Us/contact us.html">Contact Us</a></p>
+                    <p>Address: Al Arab st. 21-Amman - Jordan</p>
+                    <p>Email: <a href="mailto:amu.university@gmail.com">amu.university@gmail.com</a></p>
+                    <p>Tel: 00962-65609999</p>
+                    <p>Post Code: 11937</p>
+                    <p>P.O.Box: 541350</p>
+               </ul>
+          </ul>
+          <ul type="none" class="footer1">
+               <ul type="none" class="bottom-footer">
+                    <ul type="none" class="x">
+                         <ul type="none">
+                              <li><a href="https://www.facebook.com/profile.php?id=61553799166476"><i
+                                             class='bx bxl-facebook-square' style="font-size: 50px;"></i></a></li>
+                         </ul>
+                         <ul type="none">
+                              <li><a href="https://www.instagram.com/amu.education/"><i class='bx bxl-instagram-alt'
+                                             style="font-size: 50px;"></i></a></li>
+                         </ul>
+                         <ul type="none">
+                              <li><a href="https://twitter.com/AmuUniversity"><i class='bx bxl-twitter'
+                                             style="font-size: 50px;"></i></a></li>
+                         </ul>
+                         <ul type="none">
+                              <li><a href="https://www.youtube.com/channel/UCv7Rg3sZvtb3WaGfeFT5S4g"><i
+                                             class='bx bxl-youtube' style="font-size: 50px;"></i></a></li>
+                         </ul>
+                    </ul>
+               </ul>
+          </ul>
+     </footer>
+</body>
+
+</html>
